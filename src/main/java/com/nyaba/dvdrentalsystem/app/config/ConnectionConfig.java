@@ -23,10 +23,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  * @author boniface
  */
-@Configuration
-@ComponentScan("com.kabaso.askweb")
-@EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "com.nyaba.dvdrentalsystem.respository")
+@Configuration//anotitating a clas
+@ComponentScan("com.nyaba.dvdrentalsystem")// tells package which file to scan
+@EnableTransactionManagement//
+@EnableJpaRepositories(basePackages = "com.nyaba.dvdrentalsystem.respository")//look for repositories under this file
 public class ConnectionConfig {
 
     @Bean
