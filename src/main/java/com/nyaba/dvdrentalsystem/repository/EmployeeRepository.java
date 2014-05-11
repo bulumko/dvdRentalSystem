@@ -6,13 +6,13 @@
 
 package com.nyaba.dvdrentalsystem.repository;
 
-import com.nyaba.dvdrentalsystem.domain.Person;
+import com.nyaba.dvdrentalsystem.domain.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author hashcode
  */
-public interface PersonRepository extends JpaRepository<Person, Long>{
+public interface EmployeeRepository extends JpaRepository<Employee, Long>{
     
 }

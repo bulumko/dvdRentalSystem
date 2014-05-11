@@ -4,10 +4,13 @@
  */
 package com.nyaba.dvdrentalsystem.domain;
 
+import javax.persistence.Embeddable;
+
 /**
  *
  * @author cnyaba
  */
+@Embeddable
 public class Contact {
     private String phoneNo;
     private String Fax;

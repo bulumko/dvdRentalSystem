@@ -18,6 +18,15 @@ public class Address implements Serializable {
     private String streetName;
     private String city;
     private String province;
+    private String surbub;
+
+    public String getSurbub() {
+        return surbub;
+    }
+
+    public void setSurbub(String surbub) {
+        this.surbub = surbub;
+    }
 
     public String getPostalCode() {
         return postalCode;

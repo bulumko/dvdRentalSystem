@@ -24,7 +24,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @author boniface
  */
 @Configuration
-@ComponentScan("com.kabaso.askweb")
+@ComponentScan("com.nyaba.dvdsentalsystem")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.nyaba.dvdrentalsystem.respository")
 public class ConnectionConfig {
@@ -33,9 +33,9 @@ public class ConnectionConfig {
     public DataSource dataSource() {
         BasicDataSource ds = new org.apache.commons.dbcp.BasicDataSource();
         ds.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-        ds.setUrl("jdbc:derby://localhost:1527/db");
-        ds.setUsername("db");
-        ds.setPassword("db");
+        ds.setUrl("jdbc:derby://localhost:1527/dvd");
+        ds.setUsername("dvd");
+        ds.setPassword("dvd");
         return ds;
     }
 
